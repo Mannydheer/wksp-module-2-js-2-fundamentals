@@ -25,6 +25,7 @@ const arrayTwo = ['thought', 'dreams', 'knowledge', 'truth'];
 
 let newArray = arrayOne.concat(arrayTwo);
 
+//new array with everything in it. 
 ```
 
 ---
@@ -39,6 +40,7 @@ const lexicon = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silenc
 
 let sentence = lexicon.join();
 
+//returns the array as a string. 
 ```
 
 ---
@@ -66,3 +68,56 @@ Let's dip into the internet and see if we can learn all of these methods collect
 ---
 
 [Next lecture: Functions](../lecture-8-functions)
+
+1. 
+
+--INCLUDES
+The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate
+-As soon as it hits sister and found it, it will stop. 
+
+let summer = ['annoying, 'sister', 'warrior'];
+console.log(summer.includes('sister'));
+//
+true
+console.log(summer.includes('sis'));
+//false.
+
+--SLICE
+The slice() method returns the selected elements in an array, as a new array object.
+
+The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+
+example:
+
+let veg = ['carrot', 'celery' , 'cabbage' , 'brocoli'];
+const cruciferousVeg = veg.slice(2,4);
+//console.log(cruciferousVeg);
+['cabbage, brocolli']
+
+
+2. .IndexOf()
+
+let yoda = ['size','matters','not'];
+let jedi = yoda.indexOf('not');
+console.log(jedi);
+2 
+
+ .push()
+let outfit = ['shoes', 'pants', 'shirt'];
+(outfit.push('hat', 'purse', 'coat'));
+console.log(outift);
+
+3. .pop()
+
+let outfit = ['shoes', 'pants', 'shirt'];
+(outfit.pop('shirt'));
+console.log(outift);
+
+//removes shirt
+
+
+.unshift 
+adds in the begnning
+6. 
+
+let stringExample = []

@@ -1,0 +1,13 @@
+//JAVASCRIPT 2 - LECTURE 9 - ARRAY 0 METHODS
+MAP ARRAY
+const words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
+
+const newWords = words.map(function(word) {
+    return word.toUpperCase();
+});
+
+console.log(newWords);
+
+
+
+

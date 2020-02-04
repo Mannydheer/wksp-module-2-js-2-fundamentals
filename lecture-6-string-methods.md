@@ -16,18 +16,18 @@ For example, all objects have `toString` and `valueOf` methods.
 
 ```js
 let num = 3;
-num.toString();
+num.toString(); // "3"
 
 let bool = true;
-bool.toString();
+bool.toString(); //"true"
 
 let str = 'hello';
-str.toString();
+str.toString(); // "hello"
 
-let arr = [1, 2, 'three'];
+let arr = [1, 2, 'three']; //"1,2,three"
 arr.toString();
 
-let dip = {value: 3};
+let dip = {value: 3}; //cannot do this. 
 dip.toString();
 ```
 
@@ -47,14 +47,14 @@ _We'll talk more about objects and methods later when we talk about creating our
 
 Strings have a bunch of methods and properties that will be immediately useful. 😉
 
-- `.length`
+- `.length` // return the length
 - `.replace()`
 - `.slice()`
 - `.concat()`
 - `split()`
 - `indexOf()`
 
-📝 None of these methods **mutate** the string; strings are **immutable**.
+📝 None of these methods **mutate** //cannot mutate string with these methods ---- the string; strings are **immutable**.
 📝 They return a new version of the string which you can then work with as you like.
 
 ---
@@ -69,6 +69,8 @@ const sentiment = 'I love programming';
 sentiment.length;
 
 ```
+18
+//counts the space
 
 ---
 
@@ -81,6 +83,7 @@ It takes 2 parameters, the value to replace and the new value.
 ```js
 // Example
 const sentiment = 'I love programming';
+sentiment2.replace("programmong","bacon")
 
 ```
 
@@ -95,6 +98,7 @@ const sentiment = 'I love programming';
 ```js
 // Example
 const sentiment = 'I love programming';
+s3.slice(3, 6); //ove 
 
 ```
 
@@ -110,7 +114,9 @@ let partOne = 'Do or do not.';
 let partTwo = 'There is no try.';
 
 ```
-
+const new1 = partOne.concat(partTwo);
+const new2 = '$(partOne) $(partTwo)'
+const newSentence = partOne + partTwo;
 ---
 
 ### [`.split()`](https://www.w3schools.com/jsreF/jsref_split.asp)
@@ -120,7 +126,8 @@ The `.split()` method "split" a string into an array of _substrings_.
 ```js
 // Example
 const truth = 'The greatest teacher, failure is.';
-
+truth.split('') //if you split on nothing, it will take string and plsit into individual letters. 
+//splitting a character will remove that character. 
 ```
 
 ---
@@ -133,7 +140,7 @@ This method returns -1 if the value to search for never occurs.
 
 ```js
 // Example
-let yodaSpeak = "Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.";
+let yodaSpeak = "Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.";  
 
 ```
 
