@@ -10,6 +10,7 @@ function max(num1, num2) {
     else {
         return num2;
     }
+    console.log("harpreet");
 }
 
 
