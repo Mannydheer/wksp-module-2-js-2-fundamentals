@@ -4,9 +4,13 @@
 
 function itemIsPresent(array, item) {
 
+return array;
+return item;
+
+//NOT DONE
 }
 
-
+myArray.forEach(itemIsPresent(myArray,));
 // Test case
 const myArray = ['bacon', 'purple', 'door', 'window', 'exist', 'code', 'program', 'funky'];
 
