@@ -3,6 +3,7 @@
 // The returned average should also be rounded to the nearest unit. (no decimals, please!)
 
 function calculateAverage(grades) {
+    
 
 }
 
