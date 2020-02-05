@@ -13,8 +13,12 @@
 function removeEvens(lst) {
     // lst is an array of strings
 
-  
+    oddcount = lst.filter(function(value)
+    {
+        return value % 2 !== 0; 
+    });
 
+return oddcount;
 }
 
 
