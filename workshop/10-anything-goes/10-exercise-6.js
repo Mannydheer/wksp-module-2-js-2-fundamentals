@@ -18,6 +18,13 @@
 
 function identifyArmstrongNumbers(num1, num2) {
 
+
+
+
+
+
+
+
 }
 
 console.log(identifyArmstrongNumbers(100, 99999));

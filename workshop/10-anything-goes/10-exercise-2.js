@@ -12,9 +12,27 @@
 
 function countChar(str, char) {
 
-
-}
-// -------------------------------------------------------------------------
-console.log('Q2: ', countChar('BananaBabyBubbles', 'u'));
-console.log('Q2: ', countChar('BananaBabyBubbles', 'a'));
-console.log('Q2: ', countChar('BananaBabyBubbles', 'Z'));
+    let stringHolder;
+    stringHolder = str.split('');
+  
+     let bCount = 0;
+      for (i = 0; i < stringHolder.length; i++)
+      {
+          //char holds the letter for which we want to check for. 
+        if (stringHolder[i] == char) {
+          bCount++;
+        }
+      }
+      
+    return bCount;
+       
+    }
+  
+  
+  
+  
+  // -------------------------------------------------------------------------
+  //since we are calling our function, everytime we call, it will calculate based on each call out. 
+  console.log('Q2: ', countChar('BananaBabyBubbles', 'u'));
+  console.log('Q2: ', countChar('BananaBabyBubbles', 'a'));
+  console.log('Q2: ', countChar('BananaBabyBubbles', 'Z'));
